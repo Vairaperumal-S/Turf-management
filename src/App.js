@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
+import Turf from './Components/Addturf';
+import Delete from './Components/Deleteturf';
+import Showturf from './Components/showturf';
+import BookTurf from './Components/Bookturf';
+import Admin from './pages/admin';
+import Payment from './Components/Payment';
+import Modify from './Components/Modify';
+import Show from './Components/Show';
+import Review from './Components/Review';
+import ShowReview from './Components/showreview';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/Turf" element={<Turf />} />
+        <Route path="/showturf" element={<Showturf />} />
+        <Route path="/bookturf/:turfId" element={<BookTurf />} />
+        <Route path="/payment/:id" element={<Payment />} />
+        <Route path="/admin" element={<Admin />} />
+        <Route path="/modify/:turfId" element={<Modify />} />
+        <Route path="/show" element={<Show />} />
+        <Route path="/review" element={<Review />} />
+        <Route path="/showreview" element={<ShowReview />} />
+        <Route path="/deleteturf" element={<Delete />} />
+      </Routes>
     </div>
   );
 }

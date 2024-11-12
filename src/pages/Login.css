@@ -1,0 +1,46 @@
+/* Main container that takes the full screen */
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('./Turf _images1.jpeg'); /* Set your image as background */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Overlay for the form container */
+  
+  
+  /* Form inputs and buttons */
+  .login-form-container h1 {
+    color: #e0e0e0;
+    text-align: center;
+  }
+  
+  .login-form-container label {
+    color: #e0e0e0;
+    margin-top: 1rem;
+  }
+  
+  .login-form-container input,
+  .login-form-container button {
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+  
+  .login-form-container button {
+    background-color: #4f46e5;
+    color: white;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  
+  .login-form-container p {
+    color: #ff4d4d;
+    font-weight: bold;
+  }
+  

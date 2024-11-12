@@ -1,0 +1,61 @@
+/* Main container styling */
+.review-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Error message styling */
+  .error-message {
+    color: #d9534f; /* Red color for errors */
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  /* Table styling */
+  .reviews-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  /* Table header styling */
+  .reviews-table th {
+    background-color: #4CAF50; /* Green background for headers */
+    color: white;
+    padding: 12px;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  /* Table row styling */
+  .reviews-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  /* Hover effect on rows */
+  .reviews-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Alternating row colors */
+  .reviews-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Responsive table for smaller screens */
+  @media (max-width: 600px) {
+    .review-container {
+      padding: 10px;
+    }
+  
+    .reviews-table th, .reviews-table td {
+      padding: 8px;
+      font-size: 14px;
+    }
+  }
+  

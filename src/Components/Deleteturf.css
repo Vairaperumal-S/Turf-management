@@ -1,0 +1,89 @@
+/* DeleteTurf.css */
+
+/* Basic container styling */
+div {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    height: 100vh; /* Make the container full height of the page */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Title */
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 32px;
+  }
+  
+  /* Error message styling */
+  p {
+    color: red;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  /* Table styling */
+  table {
+    width: 90%; /* Make the table take up 90% of the page width */
+    height: 80%; /* Adjust the height to fill the page */
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add some shadow for visual effect */
+  }
+  
+  /* Header styling */
+  th, td {
+    padding: 15px 20px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  /* Header styling */
+  th {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+  }
+  
+  /* Row hover effect */
+  tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Image styling */
+  td img {
+    width: 100px; /* Make the image a little bigger */
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  /* Delete button styling */
+  button {
+    font-size: 18px;
+    color: red;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    transition: color 0.3s;
+  }
+  
+  button:hover {
+    color: darkred;
+  }
+  
+  /* Make the body fill the screen */
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+    background-color: #f4f4f4;
+  }
+  
